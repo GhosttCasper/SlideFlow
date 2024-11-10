@@ -47,6 +47,7 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.core.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -69,4 +70,22 @@ dependencies {
 
     // Moshi
     implementation(libs.moshi.kotlin)
+
+    // Unit tests
+    testImplementation(libs.junit)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.kotlin)
+    testImplementation(libs.kotlinx.coroutines.test)
+
+    // Test ViewModel
+    testImplementation(libs.androidx.core.testing)
+    testImplementation(libs.powermock.powermock.module.junit4)
+    testImplementation(libs.powermock.api.mockito2)
+
+    // Test API with Retrofit
+    testImplementation(libs.mockwebserver)
+
+    androidTestImplementation(libs.kotlinx.coroutines.test)
+
+
 }
